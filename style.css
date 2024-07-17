@@ -1,0 +1,261 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.info span,i{
+    color: #FFAF45;
+}
+.links div a i:hover{
+color: #FFAF45;
+}
+h1{
+    font-size: 48px;
+}
+.links div{
+    padding: 20px;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.links div a i{
+    position: absolute;
+    right: 20px;
+    color: white;
+    font-size: 25px;
+}
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    flex-direction: column;
+    position: fixed;
+    right: 20px;
+    z-index: 1;
+}
+.con{
+    width: 80%;
+    height: 100vh;
+   margin: 10px auto;
+}    
+
+.head{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+.btn1,.btn2{
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    border: 1px solid black;
+    background-color: white;
+    padding: 10px;
+    transition: all .5s;
+    font-size: 15px;
+}
+.btn1{
+    background-color: black;
+    color: white;
+}
+.btn1:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.btn2:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.abt-info img{
+    width: 350px;
+    height: 300px;
+}
+.abt-info{
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.abt-info p{
+    width: 550px;
+    line-height:25px;
+    letter-spacing: 1px;
+}
+
+.abt h1{
+    text-align: center;
+}
+.edu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 100px;
+
+}
+.edu-con h3:nth-child(1){
+    color: #FFAF45;
+}
+.edu-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    min-height: 250px;
+}
+.edu-title i{
+    font-size: 30px;
+}
+.edu-con{
+    text-align: center;
+    background-color: black;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    height: 150px;
+    margin: 10px;
+}
+
+.edu-title{
+text-align: center;
+
+}
+.skill{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 100px;
+    min-height: 170px;
+}
+.skillcon ul li{
+    list-style-type: none;
+    background-color: black;
+    padding: 15px;
+    color: white;
+    height: 20px;
+    width: 65px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+.skillcon ul{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,100px);
+   gap: 20px;
+   justify-content: center;
+}
+svg path {
+    fill: #FFAF45;
+ }
+.edu-con img{
+    width: 100%;
+    height: 200px;
+}
+.pro div{
+    height: 400px;
+}
+.pro button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: white;
+}
+.edu-con span{
+    margin: 5px 10px;
+}
+
+.edu-con button{
+    text-decoration: none;
+    color: black;
+    background-color: #FFAF45;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    transition: all .5s;
+}
+.contacts a{
+    text-decoration: none;
+    color: white;
+}
+.contacts,.sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 100%;
+    height: 200px;
+}
+.sec i{
+margin-right: 10px;
+;
+}
+.sec{
+    justify-content:center;
+    background-color:black ;
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    width: 250px
+}
+::selection{
+    background-color: #FFAF45;
+    color: black;
+}
+@media all and (max-width:990px) {
+    h1{
+        font-size: 32px;
+    }
+   .con{
+       width: 90%;
+   }
+    .links{
+        flex-direction: row;
+        bottom: 0px;
+        right: 0px;
+        background-color: white;
+        box-shadow: 2px 0px 10px black;
+        width: 100%;
+        align-items: center;
+        height: 90px;
+    }
+    .links div a i{
+        font-size: 20px;
+    }
+    .links div{
+        width: 20px;
+        height: 20px;
+        padding: 20px;
+    }
+    .edu-con{
+        width: 100%;
+    }
+    .abt-info img{
+        display: none;
+    }
+  
+    
+}
+@media all and (max-width:700px){
+    .head button{
+        margin-bottom: 200px;
+        
+    }
+}
